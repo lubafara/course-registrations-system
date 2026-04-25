@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم التسجيل - نظام الطلاب</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      
+        .sidebar {
+            min-height: 100vh;
+            background-color: #343a40;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .sidebar a.active {
+            background-color: #0d6efd;
+        }
+        .stat-card {
+            transition: transform 0.2s;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body style=" background: linear-gradient(135deg,#4ab2b9,#654b6b);"></body>
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">نظام التسجيل الجامعي</span>
+            <span class="navbar-text">
+                مرحباً، الطالب: أحمد محمد
+            </span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Right Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse navbar-collapse">
+                <div class="position-sticky pt-3">
+                    <a href="#" class="active">الرئيسية</a>
+                    <a href="#">الطلاب</a>
+                    <a href="#">التسجيل</a>
+                    <a href="#">المقررات</a>
+                    <a href="#">تسجيل الخروج</a>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                
+                <!-- Page Title -->
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">لوحة التحكم</h1>
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card stat-card bg-primary text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">عدد الطلاب</h5>
+                                <h2 class="mb-0">1,250</h2>
+                                <small>طالب مسجل</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stat-card bg-success text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">المقررات</h5>
+                                <h2 class="mb-0">45</h2>
+                                <small>مقرر متاح</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stat-card bg-warning text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">الشعب</h5>
+                                <h2 class="mb-0">120</h2>
+                                <small>شعبة نشطة</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Registrations Table -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">آخر التسجيلات</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>رقم الطالب</th>
+                                        <th>الاسم</th>
+                                        <th>المقرر</th>
+                                        <th>التاريخ</th>
+                                        <th>الحالة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2024001</td>
+                                        <td>محمد علي</td>
+                                        <td>برمجة 1</td>
+                                        <td>2024-01-15</td>
+                                        <td><span class="badge bg-success">مؤكد</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024002</td>
+                                        <td>سارة أحمد</td>
+                                        <td>رياضيات</td>
+                                        <td>2024-01-14</td>
+                                        <td><span class="badge bg-warning">قيد الانتظار</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024003</td>
+                                        <td>علي حسن</td>
+                                        <td>فيزياء</td>
+                                        <td>2024-01-13</td>
+                                        <td><span class="badge bg-success">مؤكد</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024004</td>
+                                        <td>منى خالد</td>
+                                        <td>كيمياء</td>
+                                        <td>2024-01-12</td>
+                                        <td><span class="badge bg-danger">ملغى</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024005</td>
+                                        <td>ياسر عمر</td>
+                                        <td>برمجة 2</td>
+                                        <td>2024-01-11</td>
+                                        <td><span class="badge bg-success">مؤكد</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0">إجراءات سريعة</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary">إضافة طالب جديد</button>
+                                    <button class="btn btn-success">تسجيل طالب في مقرر</button>
+                                    <button class="btn btn-warning">تعديل بيانات طالب</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="mb-0">الإحصائيات</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        الطلاب النشطون
+                                        <span class="badge bg-primary rounded-pill">1,100</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        الطلاب المتغيبون
+                                        <span class="badge bg-warning rounded-pill">150</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        المقررات المكتملة
+                                        <span class="badge bg-success rounded-pill">38</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="mt-5 mb-3 text-center text-muted">
+                    <p>نظام التسجيل الجامعي - مشروع طالب</p>
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

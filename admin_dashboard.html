@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+        }
+
+        .card-custom {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .btn-custom {
+            width: 100%;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark mb-4">
+    <div class="container">
+        <span class="navbar-brand">Admin Dashboard</span>
+
+        <div>
+            <a href="manage-prerequisites.html" class="btn btn-outline-light btn-sm">Prerequisites</a>
+            <a href="manage_courses.html" class="btn btn-outline-light btn-sm">Courses</a>
+            <a href="index.html" class="btn btn-danger btn-sm">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="text-center text-white mb-5">
+        <h1>Welcome Admin</h1>
+        <p>Manage courses and prerequisites easily</p>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-6 mb-3">
+            <a href="manage_courses.html" class="btn btn-primary btn-custom">
+                Manage Courses
+            </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <a href="manage-prerequisites.html" class="btn btn-warning btn-custom">
+                Manage Prerequisites
+            </a>
+        </div>
+    </div>
+
+    <div class="card-custom shadow">
+        <h4 class="mb-3">Courses</h4>
+
+        <input type="text" class="form-control mb-3" placeholder="Search course...">
+
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>CS101</td>
+                    <td>Programming 1</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" onclick="viewCourse('CS101')">View</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CS102</td>
+                    <td>Database</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" onclick="viewCourse('CS102')">View</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CS201</td>
+                    <td>Web Development</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" onclick="viewCourse('CS201')">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>
+function viewCourse(code) {
+    alert("Course details: " + code);
+}
+</script>
+
+</body>
+</html>
